@@ -1,0 +1,22 @@
+{
+  "name": "developer-profile-generator",
+  "version": "1.0.0",
+  "description": "Homework: Developer Profile Generator using Node.js and ES6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbush2014/Developer-Profile-Generator.git"
+  },
+  "author": "Christopher Bush",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cbush2014/Developer-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/cbush2014/Developer-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^7.0.0"
+  }
+}
