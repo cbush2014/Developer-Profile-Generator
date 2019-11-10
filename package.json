@@ -18,6 +18,7 @@
   "homepage": "https://github.com/cbush2014/Developer-Profile-Generator#readme",
   "dependencies": {
     "axios": "^0.19.0",
-    "inquirer": "^7.0.0"
+    "inquirer": "^7.0.0",
+    "pdfkit": "^0.10.0"
   }
 }

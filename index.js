@@ -1,6 +1,14 @@
 var axios = require("axios");
 var inquirer = require("inquirer");
 var fs = require("fs");
+var pdf = require("pdfkit");
+
+var myDoc = new pdf;
+myDoc.pipe(fs.createWriteStream('node.pdf'));
+myDoc.font('Times-Roman') 
+  .fontSize(24)
+  .text('NodeJS PDF Document', 100,100);
+myDoc.end();
 
 inquirer
     .prompt([
@@ -23,13 +31,13 @@ inquirer
         console.log(response.data);
         // write out information from GitHub in a resume markdown file
         fs.writeFile(answers.username + "-resume.md",    
-            "# "+response.data.name+" \n" + "![Profile Photo]("+ response.data.avatar_url+") \n"+
-            "Bio:"+response.data.bio+" \n"+
-            " Company: " + response.data.company+" \n"+
-            " Repo URL: ["+response.data.name+ "'s Repo](#"+  response.data.repos_url +") \n"+ 
-            " Public Repos: "+response.data.public_repos+" \n"+
-            " Followers: " + response.data.followers +" \n"+
-            " Following: " + response.data.following +" \n"+
+            "# "+response.data.name +"\r\n" + "![Profile Photo]("+ response.data.avatar_url+") \r\n"+
+            "Bio:"+response.data.bio +"\r\n"+
+            " Company: " + response.data.company +"\r\n"+
+            " Repo URL: ["+response.data.name+ "'s Repo](#"+  response.data.repos_url +") \r\n"+ 
+            " Public Repos: "+response.data.public_repos +"\r\n"+
+            " Followers: " + response.data.followers +"\r\n"+
+            " Following: " + response.data.following +"\r\n"+
              " Location: "+ response.data.location
             ,function (err) {
 
