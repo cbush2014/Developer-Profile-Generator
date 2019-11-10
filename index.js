@@ -31,13 +31,13 @@ inquirer
         console.log(response.data);
         // write out information from GitHub in a resume markdown file
         fs.writeFile(answers.username + "-resume.md",    
-            "# "+response.data.name +"\r\n" + "![Profile Photo]("+ response.data.avatar_url+") \r\n"+
-            "Bio:"+response.data.bio +"\r\n"+
-            " Company: " + response.data.company +"\r\n"+
-            " Repo URL: ["+response.data.name+ "'s Repo](#"+  response.data.repos_url +") \r\n"+ 
-            " Public Repos: "+response.data.public_repos +"\r\n"+
-            " Followers: " + response.data.followers +"\r\n"+
-            " Following: " + response.data.following +"\r\n"+
+            "# <font color= '"+answers.favcolor +"'>"+response.data.name +"</font>  \r\n" + "![Profile Photo]("+ response.data.avatar_url+")  \r\n"+
+            " Bio: "+response.data.bio +"  "+
+            " Company: " + response.data.company +"  \r\n"+
+            " Repo URL: ["+response.data.name+ "'s Repo](#"+  response.data.repos_url +")  \r\n"+ 
+            " Public Repos: "+response.data.public_repos +"  \r\n"+
+            " Followers: " + response.data.followers +"  \r\n"+
+            " Following: " + response.data.following +"  \r\n"+
              " Location: "+ response.data.location
             ,function (err) {
 
