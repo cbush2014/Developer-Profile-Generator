@@ -1,6 +1,6 @@
 # Developer-Profile-Generator
 
-![Bootcamp Homework 05 shield](https://img.shields.io/badge/Bootcamp-Developer_Profile_Generator-green)
+![Bootcamp Homework shield](https://img.shields.io/badge/Bootcamp-Developer_Profile_Generator-green)
 
 ## Table of contents
 * [General info](#general-info)
@@ -23,9 +23,9 @@ The  MarkDown will be populated with the following:
 * Number of users following
 
 ## Instructions
-AS AN employee with a busy schedule  
-I WANT to add important events to a daily planner  
-SO THAT I can manage my time effectively
+AS AN tech user  
+I WANT to be able to generate GitHub resume files  
+SO THAT I can demonstrate proficiency using nodeJS
 
 [enter in bash] node index.js to start program
 
@@ -35,17 +35,13 @@ SO THAT I can manage my time effectively
 * npm modules: axios, inquirer, fs, pdfkit  
 
 ## Screenshots
-![Command line interface](./Assets/img/dp2.jpg)  
+![Command line interface gif](./Assets/img/dev-profile-gen.gif)  
 ![Example output Readme.md](./assets/img/ex-readme-md.png)  
 ![Example output Readme.pdf](./assets/img/ex-readme-pdf.png)  
 
 
 ## Features
 List of features ready and TODOs for future development
-* The current day is displayed at the top of the calendar 
-* The application displays timeblocks for standard business hours (9 a.m. to 5 p.m.)  
-* Each timeblock contains an input field and save button  
-* Clicking a timeblock's "Save" button stores the input text in local storage, allowing the text to persist when the application is refreshed.
-* Each timeblock is color coded to indicate whether it is in a past, present, or future hour.
+* The program will create both a markdown and pdf version of a GitHub resume
 
 
